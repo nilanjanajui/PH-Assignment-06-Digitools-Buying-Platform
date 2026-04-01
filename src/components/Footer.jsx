@@ -27,11 +27,9 @@ export default function Footer() {
     return (
         <footer style={{ backgroundColor: "#0f1117" }} className="text-gray-400">
 
-            {/* Main Footer */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="flex flex-col lg:flex-row gap-10">
 
-                    {/* ── Left: Brand ── */}
                     <div className="lg:w-1/3">
                         <h2 className="text-2xl font-extrabold text-white mb-4">
                             DigiTools
@@ -42,10 +40,8 @@ export default function Footer() {
                         </p>
                     </div>
 
-                    {/* ── Right: Links + Social ── */}
                     <div className="flex-1 flex flex-wrap justify-between gap-8">
 
-                        {/* Link Columns */}
                         {footerLinks.map((col) => (
                             <div key={col.title}>
                                 <h4 className="text-white font-semibold text-sm mb-5">
@@ -66,7 +62,6 @@ export default function Footer() {
                             </div>
                         ))}
 
-                        {/* Social Links — last column */}
                         <div>
                             <h4 className="text-white font-semibold text-sm mb-5">
                                 Social Links
@@ -87,13 +82,9 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-
-            {/* Divider */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <hr className="border-gray-800" />
             </div>
-
-            {/* Bottom Bar */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
                 <p className="text-sm text-gray-500">
                     © 2026 Digitools. All rights reserved.
