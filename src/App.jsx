@@ -10,6 +10,7 @@ import StatsSection from "./components/Status";
 import MainSection from "./components/MainSection";
 import StepsSection from "./components/StepsSection";
 import PricingSection from "./components/PricingSection";
+import Workflow from "./components/Workflow";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -24,6 +25,7 @@ function App() {
         <MainSection cartItems={cartItems} setCartItems={setCartItems}></MainSection>
         <StepsSection></StepsSection>
         <PricingSection></PricingSection>
+        <Workflow></Workflow>
 
       </div>
     </>
