@@ -35,8 +35,7 @@ export default function ProductCard({ product, onAddToCart, cartItems }) {
                 </span>
             )}
 
-            {/* Icon */}
-            <div className="w-12 h-12 bg-violet-50 rounded-xl flex items-center justify-center overflow-hidden">
+            <div className="w-12 h-12  rounded-full border border-gray-200 flex items-center justify-center overflow-hidden">
                 <img
                     src={product.icon}
                     alt={product.name}
@@ -44,7 +43,6 @@ export default function ProductCard({ product, onAddToCart, cartItems }) {
                 />
             </div>
 
-            {/* Name & Description */}
             <div>
                 <h3 className="text-base font-bold text-gray-900 mb-1">
                     {product.name}
@@ -54,7 +52,6 @@ export default function ProductCard({ product, onAddToCart, cartItems }) {
                 </p>
             </div>
 
-            {/* Price */}
             <div className="flex items-baseline gap-1">
                 <span className="text-2xl font-extrabold text-gray-900">
                     ${product.price}
@@ -64,7 +61,6 @@ export default function ProductCard({ product, onAddToCart, cartItems }) {
                 </span>
             </div>
 
-            {/* Features */}
             <ul className="flex flex-col gap-1.5">
                 {product.features.map((feature, i) => (
                     <li key={i} className="flex items-center gap-2 text-sm text-gray-600">
@@ -74,7 +70,6 @@ export default function ProductCard({ product, onAddToCart, cartItems }) {
                 ))}
             </ul>
 
-            {/* Buy Now Button */}
             <button
                 onClick={handleBuy}
                 className={`mt-auto w-full flex items-center justify-center gap-2 font-semibold py-2.5 rounded-xl transition-all duration-300 text-sm

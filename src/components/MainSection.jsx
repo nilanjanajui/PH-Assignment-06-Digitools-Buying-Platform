@@ -9,7 +9,7 @@ export default function MainSection({ cartItems, setCartItems }) {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    // Fetch products from public/products.json
+
     useEffect(() => {
         fetch("/products.json")
             .then((res) => res.json())
@@ -43,7 +43,6 @@ export default function MainSection({ cartItems, setCartItems }) {
         <section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
 
-                {/* Section Header */}
                 <div className="text-center mb-10">
                     <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-3">
                         Premium Digital Tools
@@ -53,7 +52,6 @@ export default function MainSection({ cartItems, setCartItems }) {
                         to boost your productivity and creativity.
                     </p>
 
-                    {/* Toggle Buttons */}
                     <div className="inline-flex items-center bg-white border border-gray-200 rounded-xl p-1 gap-1 shadow-sm">
                         <button
                             onClick={() => setActiveTab("products")}
@@ -84,7 +82,6 @@ export default function MainSection({ cartItems, setCartItems }) {
                     </div>
                 </div>
 
-                {/* ── Products Tab ── */}
                 {activeTab === "products" && (
                     <>
                         {loading ? (
@@ -106,11 +103,10 @@ export default function MainSection({ cartItems, setCartItems }) {
                     </>
                 )}
 
-                {/* ── Cart Tab ── */}
+
                 {activeTab === "cart" && (
                     <div className="max-w-2xl mx-auto">
                         {cartItems.length === 0 ? (
-                            // Empty Cart State
                             <div className="flex flex-col items-center justify-center py-20 text-center">
                                 <div className="w-20 h-20 bg-violet-50 rounded-full flex items-center justify-center mb-4">
                                     <PackageOpen size={36} className="text-violet-300" />
@@ -130,7 +126,6 @@ export default function MainSection({ cartItems, setCartItems }) {
                             </div>
                         ) : (
                             <>
-                                {/* Cart Items */}
                                 <div className="flex flex-col gap-3 mb-6">
                                     {cartItems.map((item) => (
                                         <CartItem
@@ -141,7 +136,6 @@ export default function MainSection({ cartItems, setCartItems }) {
                                     ))}
                                 </div>
 
-                                {/* Total + Checkout */}
                                 <div className="bg-white border border-gray-200 rounded-2xl p-5">
                                     <div className="flex items-center justify-between mb-4">
                                         <span className="text-gray-500 font-medium">Total</span>
