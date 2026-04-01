@@ -105,21 +105,6 @@
         "icon": "../src/assets/products/images.jpeg"
     },
     {
-        "id": 8,
-        "name": "Video Editor Cloud",
-        "description": "Edit, render, and export stunning videos directly in your browser with zero installation.",
-        "price": 35,
-        "period": "monthly",
-        "tag": "New",
-        "tagType": "new",
-        "features": [
-            "4K export",
-            "100+ transitions",
-            "50GB cloud storage"
-        ],
-        "icon": "../src/assets/products/video.png"
-    },
-    {
         "id": 9,
         "name": "Email Marketing Hub",
         "description": "Design, automate, and track email campaigns that convert subscribers into loyal customers.",

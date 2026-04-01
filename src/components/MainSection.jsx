@@ -40,7 +40,7 @@ export default function MainSection({ cartItems, setCartItems }) {
     const total = cartItems.reduce((sum, item) => sum + item.price, 0);
 
     return (
-        <section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+        <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
 
                 <div className="text-center mb-10">

@@ -8,6 +8,8 @@ import Navbar from "./components/navbar";
 import Banner from "./components/Banner";
 import StatsSection from "./components/Status";
 import MainSection from "./components/MainSection";
+import StepsSection from "./components/StepsSection";
+import PricingSection from "./components/PricingSection";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -20,6 +22,9 @@ function App() {
         <Banner></Banner>
         <StatsSection></StatsSection>
         <MainSection cartItems={cartItems} setCartItems={setCartItems}></MainSection>
+        <StepsSection></StepsSection>
+        <PricingSection></PricingSection>
+
       </div>
     </>
   );
