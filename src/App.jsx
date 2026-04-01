@@ -11,6 +11,7 @@ import MainSection from "./components/MainSection";
 import StepsSection from "./components/StepsSection";
 import PricingSection from "./components/PricingSection";
 import Workflow from "./components/Workflow";
+import Footer from "./components/Footer";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -26,6 +27,7 @@ function App() {
         <StepsSection></StepsSection>
         <PricingSection></PricingSection>
         <Workflow></Workflow>
+        <Footer></Footer>
 
       </div>
     </>
