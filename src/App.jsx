@@ -1,22 +1,28 @@
 
-import './App.css'
-import Navbar from './components/navbar'
-import Banner from './components/Banner'
-import Status from './components/Status'
+
+import { useState } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import Navbar from "./components/navbar";
+import Banner from "./components/Banner";
+import StatsSection from "./components/Status";
+import MainSection from "./components/MainSection";
 
 function App() {
+  const [cartItems, setCartItems] = useState([]);
 
   return (
     <>
-      <Navbar cartCount={0}></Navbar>
-      <Banner></Banner>
-      <Status></Status>
-      
-
-
-    
+      <div className="min-h-screen bg-white">
+        <ToastContainer position="top-right" autoClose={2500}></ToastContainer>
+        <Navbar cartCount={cartItems.length}></Navbar>
+        <Banner></Banner>
+        <StatsSection></StatsSection>
+        <MainSection cartItems={cartItems} setCartItems={setCartItems}></MainSection>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

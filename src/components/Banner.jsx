@@ -1,5 +1,5 @@
-import { Play } from "lucide-react";
 import bannerImg from "../assets/banner.png";
+import Play from "../assets/Play.png";
 
 export default function Banner() {
     return (
@@ -16,24 +16,24 @@ export default function Banner() {
 
                         <h1 className="text-5xl sm:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
                             Supercharge Your <br />
-                            Digital Workflow
+                            <span className="text-violet-600">Digital Workflow</span>
                         </h1>
 
                         <p className="text-gray-500 text-base max-w-md mb-2 leading-relaxed">
                             Access premium AI tools, design assets, templates, and productivity
                             software-all in one place. Start creating faster today.
                         </p>
-                        <p className="text-gray-500 text-base mb-8">
+                        <p className="text-gray-500 text-base mb-8 ">
                             Explore Products
                         </p>
 
                         <div className="flex flex-row items-center gap-4">
-                            <button className="bg-violet-600 hover:bg-violet-700 active:scale-95 text-white font-semibold px-7 py-3 rounded-full transition-all duration-200">
+                            <button className="bg-violet-600 hover:bg-violet-700 active:scale-95 text-white font-semibold px-7 py-3 rounded-full transition-all duration-300 hover:-translate-y-1 relative">
                                 Explore Products
                             </button>
-                            <button className="flex items-center gap-2 border-2 border-violet-600 text-violet-600 hover:bg-violet-50 font-semibold px-7 py-3 rounded-full transition-all duration-200">
-                                <span className="w-6 h-6 flex items-center justify-center border-2 border-violet-600 rounded-full">
-                                    <Play size={10} fill="currentColor" />
+                            <button className="flex items-center gap-2 border-2 border-violet-600 text-violet-600 hover:bg-violet-50 font-semibold px-7 py-3 rounded-full transition-all duration-300 hover:-translate-y-1 relative">
+                                <span className="w-6 h-6 flex items-center justify-center ">
+                                    <img src={Play} alt="Play" className="w-5 h-5 object-contain" />
                                 </span>
                                 Watch Demo
                             </button>

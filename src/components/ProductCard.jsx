@@ -20,14 +20,13 @@ export default function ProductCard({ product, onAddToCart, cartItems }) {
         }
         onAddToCart(product);
         setAdded(true);
-        toast.success(`"${product.name}" added to cart! 🛒`);
+        toast.success(`"${product.name}" added to cart!`);
         setTimeout(() => setAdded(false), 2000);
     };
 
     return (
         <div className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col gap-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative">
 
-            {/* Tag Badge */}
             {product.tag && (
                 <span
                     className={`absolute top-4 right-4 text-xs font-bold px-3 py-1 rounded-full ${tagStyles[product.tagType] || "bg-gray-100 text-gray-600"}`}
@@ -37,8 +36,12 @@ export default function ProductCard({ product, onAddToCart, cartItems }) {
             )}
 
             {/* Icon */}
-            <div className="w-12 h-12 bg-violet-50 rounded-xl flex items-center justify-center text-2xl">
-                {product.icon}
+            <div className="w-12 h-12 bg-violet-50 rounded-xl flex items-center justify-center overflow-hidden">
+                <img
+                    src={product.icon}
+                    alt={product.name}
+                    className="w-8 h-8 object-contain"
+                />
             </div>
 
             {/* Name & Description */}
