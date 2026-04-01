@@ -4,16 +4,19 @@ import { X } from "lucide-react";
 export default function CartItem({ item, onRemove }) {
     const handleRemove = () => {
         onRemove(item.id);
-        toast.error(`"${item.name}" removed from cart! 🗑️`);
+        toast.error(`"${item.name}" removed from cart!`);
     };
 
     return (
         <div className="flex items-center justify-between bg-white border border-gray-200 rounded-xl px-5 py-4 hover:shadow-sm transition-shadow">
 
-            {/* Left — Icon + Info */}
             <div className="flex items-center gap-4">
-                <div className="w-10 h-10 bg-violet-50 rounded-xl flex items-center justify-center text-xl shrink-0">
-                    {item.icon}
+                <div className="w-10 h-10 rounded-full border-2 border-gray-200 flex items-center justify-center shrink-0 overflow-hidden">
+                    <img
+                        src={item.icon}
+                        alt={item.name}
+                        className="w-6 h-6 object-contain"
+                    />
                 </div>
                 <div>
                     <p className="text-sm font-bold text-gray-900">{item.name}</p>
