@@ -103,30 +103,30 @@ export default function MainSection({ cartItems, setCartItems }) {
                     </>
                 )}
 
-
                 {activeTab === "cart" && (
                     <div className="max-w-2xl mx-auto">
                         {cartItems.length === 0 ? (
-                            <div className="flex flex-col items-center justify-center py-20 text-center">
+                            // Empty Cart State
+                            <div className="bg-white border border-gray-200 rounded-2xl p-10 flex flex-col items-center justify-center text-center shadow-sm">
                                 <div className="w-20 h-20 bg-violet-50 rounded-full flex items-center justify-center mb-4">
                                     <PackageOpen size={36} className="text-violet-300" />
                                 </div>
                                 <h3 className="text-lg font-bold text-gray-700 mb-1">
                                     Your cart is empty
                                 </h3>
-                                <p className="text-gray-400 text-sm mb-6">
-                                    Browse our products and add something great!
-                                </p>
-                                <button
-                                    onClick={() => setActiveTab("products")}
-                                    className="bg-violet-600 hover:bg-violet-700 text-white font-semibold px-6 py-2.5 rounded-xl text-sm transition-all"
-                                >
-                                    Browse Products
-                                </button>
                             </div>
                         ) : (
-                            <>
-                                <div className="flex flex-col gap-3 mb-6">
+                            
+                            <div className="bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
+
+                                <div className="px-6 py-4 border-b border-gray-100">
+                                    <h3 className="text-lg font-bold text-gray-900">Your Cart</h3>
+                                    <p className="text-xs text-gray-400 mt-0.5">
+                                        {cartItems.length} item{cartItems.length > 1 ? "s" : ""} in your cart
+                                    </p>
+                                </div>
+
+                                <div className="flex flex-col gap-2 divide-y divide-gray-100 px-6">
                                     {cartItems.map((item) => (
                                         <CartItem
                                             key={item.id}
@@ -136,9 +136,9 @@ export default function MainSection({ cartItems, setCartItems }) {
                                     ))}
                                 </div>
 
-                                <div className="bg-white border border-gray-200 rounded-2xl p-5">
+                                <div className="px-6 py-4 bg-white border-t border-gray-100">
                                     <div className="flex items-center justify-between mb-4">
-                                        <span className="text-gray-500 font-medium">Total</span>
+                                        <span className="text-gray-500 font-medium text-sm">Total</span>
                                         <span className="text-2xl font-extrabold text-gray-900">
                                             ${total}
                                         </span>
@@ -150,7 +150,8 @@ export default function MainSection({ cartItems, setCartItems }) {
                                         Proceed To Checkout
                                     </button>
                                 </div>
-                            </>
+
+                            </div>
                         )}
                     </div>
                 )}
