@@ -64,7 +64,7 @@ export default function ProductCard({ product, onAddToCart, cartItems }) {
             <ul className="flex flex-col gap-1.5">
                 {product.features.map((feature, i) => (
                     <li key={i} className="flex items-center gap-2 text-sm text-gray-600">
-                        <Check size={14} className="text-violet-500 shrink-0" />
+                        <Check size={15} className="text-green-600 shrink-0" />
                         {feature}
                     </li>
                 ))}
