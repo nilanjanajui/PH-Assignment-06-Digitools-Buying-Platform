@@ -12,7 +12,7 @@
             "50+ writing templates",
             "Grammar checker"
         ],
-        "icon": "../src/assets/products/writing.png"
+        "icon": "./products/writing.png"
     },
     {
         "id": 2,
@@ -27,7 +27,7 @@
             "Monthly updates",
             "Commercial license"
         ],
-        "icon": "../src/assets/products/design-tool.png"
+        "icon": "./products/design-tool.png"
     },
     {
         "id": 3,
@@ -42,7 +42,7 @@
             "Commercial use",
             "No attribution required"
         ],
-        "icon": "../src/assets/products/camera.png"
+        "icon": "./products/camera.png"
     },
     {
         "id": 4,
@@ -57,7 +57,7 @@
             "API access",
             "Custom workflows"
         ],
-        "icon": "../src/assets/products/operation.png"
+        "icon": "./products/operation.png"
     },
     {
         "id": 5,
@@ -72,7 +72,7 @@
             "ATS optimization",
             "Export to PDF"
         ],
-        "icon": "../src/assets/products/portfolio.png"
+        "icon": "./products/portfolio.png"
     },
     {
         "id": 6,
@@ -87,7 +87,7 @@
             "Scheduler included",
             "Analytics dashboard"
         ],
-        "icon": "../src/assets/products/social-media.png"
+        "icon": "./products/social-media.png"
     },
     {
         "id": 7,
@@ -102,7 +102,7 @@
             "Site audits",
             "Competitor analysis"
         ],
-        "icon": "../src/assets/products/images.jpeg"
+        "icon": "./products/images.jpeg"
     },
     {
         "id": 9,
@@ -117,7 +117,7 @@
             "A/B testing",
             "Advanced analytics"
         ],
-        "icon": "../src/assets/products/email.png"
+        "icon": "./products/email.png"
     },
     {
         "id": 10,
@@ -132,6 +132,6 @@
             "Team sharing",
             "VS Code extension"
         ],
-        "icon": "../src/assets/products/code.png"
+        "icon": "./products/code.png"
     }
 ]
