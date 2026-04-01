@@ -1,6 +1,6 @@
 <div align="center">
   <h1>DigiTools</h1>
-  <p>A modern digital product marketplace built with React.js — browse, manage, and purchase premium digital tools in one place.</p>
+  <p>A modern digital product marketplace built with React.js - browse, manage, and purchase premium digital tools in one place.</p>
 
   <p>
     <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
@@ -15,15 +15,15 @@
 
 ## Overview
 
-DigiTools is a responsive single-page application that simulates a digital product storefront. Users can explore a curated catalog of premium tools, add items to a cart, review their selections, and proceed to checkout — all within a clean, modern interface.
+DigiTools is a responsive single-page application that simulates a digital product storefront. Users can explore a curated catalog of premium tools, add items to a cart, review their selections, and proceed to checkout - all within a clean, modern interface.
 
 ---
 
 ## Features
 
-- **Product Catalog** — Displays 10 digital products loaded from a JSON file, each with pricing, feature lists, and category tags (Popular, New, Best Seller).
-- **Cart Management** — Add and remove items in real time with live cart count updates in the navbar and toast notifications via React-Toastify.
-- **Responsive UI** — Fully optimized for mobile, tablet, and desktop with a hamburger navigation menu and adaptive layouts.
+- **Product Catalog** - Displays 10 digital products loaded from a JSON file, each with pricing, feature lists, and category tags (Popular, New, Best Seller).
+- **Cart Management** - Add and remove items in real time with live cart count updates in the navbar and toast notifications via React-Toastify.
+- **Responsive UI** - Fully optimized for mobile, tablet, and desktop with a hamburger navigation menu and adaptive layouts.
 
 ---
 
@@ -52,7 +52,7 @@ digitools/
 │   ├── components/
 │   │   ├── Navbar.jsx
 │   │   ├── Banner.jsx
-│   │   ├── StatsSection.jsx
+│   │   ├── Status.jsx
 │   │   ├── MainSection.jsx
 │   │   ├── ProductCard.jsx
 │   │   ├── CartItem.jsx
@@ -86,10 +86,6 @@ npm install
 npm run dev
 ```
 
-The app will be available at `http://localhost:5173`.
+The app will be available at [https://digitool-platform2.netlify.app/](https://digitool-platform2.netlify.app/).
 
----
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
